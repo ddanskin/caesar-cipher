@@ -8,7 +8,15 @@ def decrypt(text, key)
     decoded
 end
 
+# decode individual character using key to unshift value
 def decode_char(c, key)
+
+    # if c is not a letter between a-z, then return c
+    if c < 97 || c > 122
+        return c
+    end
+    
+    # if c - ket is less than 97, add 26 to bring it back into the a-z range
     if c - key < 97
         return c - key + 26
     else
