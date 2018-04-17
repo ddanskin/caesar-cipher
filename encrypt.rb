@@ -8,7 +8,15 @@ def encrypt(text, key)
     encoded
 end
 
+# encodes individual character using the key to shift
 def encode_char(c, key)
+
+    # if c is not a letter a-z, return c
+    if c < 97 || c > 122
+        return c
+    end
+
+    # if c + key is greate than 122, subtract 26 to bring it back to a-z range
     if c + key > 122
         return c + key - 26
     else
