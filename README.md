@@ -1,10 +1,5 @@
-# caesar-cipher
-
-# Project Title
-Caesar Cipher
-
-# Motivation
-To build a Caesar Cipher (also known as a shift cipher) command line app that encodes and decodes messages using a given key.
+# Caesar Cipher
+A Caesar Cipher (also known as a shift cipher) command line app that encodes and decodes messages using a given key.
 
 # To Use
 Download files, run command line:
